@@ -1,0 +1,86 @@
+<html>
+	<head>
+	<title>Wind Energy Prediction</title>
+	<style>
+	
+		.header {	
+			top:0px;	
+			margin:0px;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			background:  #6600ff;
+			color: rgb(255, 255, 255);
+			overflow: hidden;
+			padding-bottom: 30px;
+			font-family:Georgia, 'Times New Roman', Times, serif, serif;
+			font-size: 2.5vw;
+			width: 100%;
+			padding-left:0px;
+			text-align: center;
+			padding-top:20px;
+		}
+		.second{
+			top:90px;
+			bottom:0px;
+			margin:0px;
+			left: 0px;
+			right: 70px;
+			position: fixed;
+			padding: 0px;
+			width: 180%;
+			background-image:url("https://i.pinimg.com/originals/57/6b/38/576b38fd2a2a526e5631d2c5d3097602.gif"); 
+			background-repeat:no-repeat;
+			background-size: contain;
+		}
+		.inside{
+			top:90px;
+			bottom:0px;
+			margin:0px;
+			left: 55%;
+			right: 0%;
+			position: fixed;
+			padding-left: 15px;
+			padding-top:25px;
+			padding-right:40px;
+			background-color:#000000;
+			opacity: 100%;
+			font-family:Georgia, serif;
+			color:orange;
+			font-size:20px;
+			text-align:justify;
+			
+		}
+		.myButton{
+			
+			  border: none;
+			  text-align: center;
+			  cursor: pointer;
+			  text-transform: uppercase;
+			  outline: none;
+			  overflow: hidden;
+			  color: #000;
+			  font-weight: 700;
+			  font-size: 15px;
+			  background-color: #ffff66;
+			  padding: 10px 15px;
+			  margin: 0 auto;
+			  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+		}
+	</style>
+	</head>
+	<body>
+	
+		<div class="header">Predicting The Energy Output Of Wind Turbine Based On Weather Condition</div>
+		<div class="second">
+			<div class="inside">Wind farms are areas where many large wind turbines have been grouped together. They “harvest” the power of the wind. These large turbines look a bit like super-tall windmills.<br><br><br>
+Wind farms are built in areas known to be especially windy on a regular basis. The winds turn the blades of the turbines. Then, the turbines turn the energy of the wind into mechanical power. Generators then turn the mechanical power into electricity. That electricity is then used to power homes.<br><br><br>A blade acts much like an airplane wing. When the wind blows, a pocket of low-pressure air forms on the downwind side of the blade. The low-pressure air pocket then pulls the blade toward it, causing the rotor to turn.
+<br><br><br>
+The force of the lift is actually much stronger than the wind's force against the front side of the blade, which is called drag. The combination of lift and drag causes the rotor to spin like a propeller, and the turning shaft spins a generator to make electricity.<br><br><br>
+		<a href="{{url_for('predict')}}"><button type="button" class="myButton" >Tap to Predict Wind Power</button></a>
+		</div>
+		
+		
+		</div>
+	</body>
+</html>
